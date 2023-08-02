@@ -10,6 +10,7 @@ namespace Assignment21_Threading
     {
         public static void NameOfDays(List<string> days)
         {
+            Console.WriteLine("Days of Week");
             foreach (var day in days)
             {
                 Console.WriteLine(day);
@@ -18,7 +19,8 @@ namespace Assignment21_Threading
         }
         public static void AllMonths(List<string> months)
         {
-            foreach(var month in months)
+            Console.WriteLine("Months of Year");
+            foreach (var month in months)
             {
                 Console.WriteLine(month);
                 Thread.Sleep(2000);
@@ -26,13 +28,15 @@ namespace Assignment21_Threading
         }
         public static void DisplayFruits(List<string> fruits)
         {
-            foreach( var fruit in fruits)
+            Console.WriteLine("Fruits");
+            foreach ( var fruit in fruits)
             {
                 Console.WriteLine(fruit);
             }
         }
         public static void DisplayMeanings(Dictionary<string, string> meanings)
         {
+            Console.WriteLine("Words with Meanings");
             foreach( var meaning in meanings)
             {
                 Console.WriteLine(meaning);
